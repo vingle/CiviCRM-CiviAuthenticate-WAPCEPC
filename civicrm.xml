@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="authentication" method="upgrade">
+<extension version="3.10" type="plugin" group="authentication" method="upgrade">
     <name>Authentication - CiviAuthenticate</name>
     <author>Henry Bennett, Brian Shaughnessy</author>
-    <creationDate>July 2013</creationDate>
+    <creationDate>2024-06-03</creationDate>
     <copyright/>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <authorEmail>henry@nospam.bec-cave.org.uk, brian@lcdservices.biz</authorEmail>
     <authorUrl>www.civicrm.org</authorUrl>
-    <version>5.1.0</version>
+    <version>5.2.0</version>
     <description>PLG_CIVICRM_DESCRIPTION</description>
     <scriptfile>install.php</scriptfile>
     <files>

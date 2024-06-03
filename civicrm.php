@@ -112,12 +112,10 @@ class PlgAuthenticationCiviCRM extends CMSPlugin
 
         //CiviCRM: accommodate username OR email
         if ($this->params->get('username_email')) {
-            $query->where($db->quoteName('username') . ' = :username' . ' OR ' . $db->quoteName('email') . ' = :email');
-            $query->bind(':username', $credentials['username']);
-            $query->bind(':email', $credentials['username']);
-        } else {
-          $query->where($db->quoteName('username') . ' = :username');
-          $query->bind(':username', $credentials['username']);
+          $query->where('username=' . $db->quote($credentials['username']) . ' OR ' . 'email = ' . $db->quote($credentials['username']));
+        }
+        else {
+          $query->where('username=' . $db->quote($credentials['username']));
         }
 
         $db->setQuery($query);
